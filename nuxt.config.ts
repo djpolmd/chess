@@ -1,5 +1,13 @@
 export default defineNuxtConfig({
     target: 'static',
+    nitro: {
+        preset: "cloudflare_pages",
+        prerender: {
+            ignore: ['/404'],
+            routes: ['/']
+        },
+        serveStatic: true
+    },
     runtimeConfig: {
         // The private keys which are only available server-side
         apiSecret: '123',
