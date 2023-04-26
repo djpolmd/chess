@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+    target: 'static',
     runtimeConfig: {
         // The private keys which are only available server-side
         apiSecret: '123',
